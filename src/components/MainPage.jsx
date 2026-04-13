@@ -14,7 +14,7 @@ function MainPage({ logs, onMove, onUpdate, onDelete }) {
   // 마운트할 때마다 오늘로 시작 (메인 복귀 시에도 부모 조건부 렌더로 리마운트됨)
   const [selectedDate, setSelectedDate] = useState(startOfToday);
 
-  // 선택된 날짜의 문자열 (예: "2026. 2. 13.")
+  // 선택된 날짜의 문자열 (예: "2026. 2. 13.") 날짜
   const dateString = selectedDate.toLocaleDateString();
   
   // 💡 전체 로그 중 선택된 날짜와 일치하는 기록만 찾기
