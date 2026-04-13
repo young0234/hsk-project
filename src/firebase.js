@@ -1,15 +1,14 @@
-// src/firebase.js
 import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
-    apiKey: "AIzaSyCHtSCBL18AOSsBvqcP1J7rPV3slJUJuuM",
-    authDomain: "hsk-diary-project.firebaseapp.com",
-    projectId: "hsk-diary-project",
-    storageBucket: "hsk-diary-project.firebasestorage.app",
-    messagingSenderId: "807963020851",
-    appId: "1:807963020851:web:e4a5e7e28449d5e465dd46"
-  };
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID
+};
 
 const app = initializeApp(firebaseConfig);
-export const db = getFirestore(app); // 이 'db'를 다른 파일들이 쓸 수 있게 내보냅니다.
+export const db = getFirestore(app);
