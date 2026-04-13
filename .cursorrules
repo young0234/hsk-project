@@ -1,0 +1,15 @@
+# 프로젝트 기본 정보
+- 이 프로젝트는 React와 TypeScript를 기반으로 한 HSK 학습 다이어리 앱입니다.
+- 주요 스택: React, TypeScript, Firebase(Firestore), Tesseract.js (OCR), react-calendar.
+
+# 코딩 스타일 가이드
+- 모든 컴포넌트는 함수형 컴포넌트로 작성하고, 명확한 타입 정의를 포함해줘.
+- 상태 관리는 최대한 직관적으로 하고, Firebase 연동 시 비동기 처리를 깔끔하게 해줘.
+
+# 디자인 시스템 및 UI/UX
+- 전체적인 디자인 톤은 '무채색(Achromatic)'과 '미니멀리즘'을 유지해줘.
+- 유리 느낌의 '글래스모피즘(Glassmorphism)' UI 스타일을 적극적으로 반영해줘.
+- 깔끔하고 세련된 느낌을 주는 CSS 혹은 Tailwind 코드를 추천해줘.
+
+# 기타 규칙
+- 새로운 기능을 구현할 때 기존의 디자인 정체성을 해치지 않도록 주의해줘.
